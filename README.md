@@ -99,17 +99,17 @@ But after checking the performance in the validation set the result was:
 - Loss: 0.803
 - Accuracy: 0.805
 
-So we can assert that there is a sign of slight overfitting.
+So we can assert that our model is capable to generalize.
 
 We can now pass to the last subpart, the application of **Transfer Learning**.
 
 Since this is a process that nowadays is becoming more and more spread across all fields of AI and ML we deicided to give it a try. We implemented a **VGGNet16** network with **imagenet** weights, linked with two last layers: a Flatten and a Dense with a Softmax function.
 
-The results of this network are incredible: after only two epochs the accuracy reach 0.91. At the end, anyway, we cannot raccomend using such an approach for this task since the final performance are:
+The results of this network are incredible: after only two epochs the accuracy reaches 0.91 on the training set. At the end, the final performances are:
 - 0.96 accuracy on the training
 - 0.89 accuracy on the validation
 
-So the overiffting is more present.
+It is present a slight overfit but the results are still impressive.
 
 
 
